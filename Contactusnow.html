@@ -241,25 +241,6 @@
                 content3.classList.add("active");
             }
         }
-
-        function validateEmail(email) {
-          var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return emailPattern.test(email);
-        }
-
-        document.querySelector("form").addEventListener("submit", function(event) {
-          event.preventDefault(); // Prevent form submission
-
-          var emailInput = document.getElementById("inputemailcheez");
-          var email = emailInput.value.trim();
-
-          if (validateEmail(email)) {
-            alert("Thank you for subscribing!");
-            emailInput.value = ""; // Reset the input field after successful submission
-          } else {
-            alert("Please enter a valid email address.");
-          }
-        });
     </script>
 </body>
 </html>
